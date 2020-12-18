@@ -1,4 +1,5 @@
 .display,
+.outer-container,
 .numbers-container,
 .numbers-container2,
 .numbers-container3,
@@ -21,22 +22,7 @@ input[type='number'] {
   height: 50px;
 }
 
-.seven,
-.eight,
-.nine,
-.divide,
-.four,
-.five,
-.six,
-.multiply,
-.one,
-.two,
-.three,
-.minus,
-.zero,
-.comma,
-.equals,
-.plus {
+.btn {
   border: 3px solid black;
   height: 1.5rem;
   width: 1rem;
