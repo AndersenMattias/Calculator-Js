@@ -1,6 +1,6 @@
 .display,
 .outer-container,
-.numbers-container,
+.numbers-container1,
 .numbers-container2,
 .numbers-container3,
 .numbers-container4 {
@@ -12,14 +12,14 @@ h1 {
   text-align: center;
 }
 
-.outer-container {
-  padding-top: 30px;
+.reset {
+  transform: translate(48px);
 }
 
 .main-container {
   border: 3px solid black;
-  width: 400px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
 }
 
 .display {
