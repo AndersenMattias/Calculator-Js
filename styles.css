@@ -1,0 +1,46 @@
+.display,
+.numbers-container,
+.numbers-container2,
+.numbers-container3,
+.numbers-container4 {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  border: 3px solid black;
+  width: 300px;
+}
+
+.display {
+  padding-top: 20px;
+}
+
+input[type='number'] {
+  width: 200px;
+  height: 50px;
+}
+
+.seven,
+.eight,
+.nine,
+.divide,
+.four,
+.five,
+.six,
+.multiply,
+.one,
+.two,
+.three,
+.minus,
+.zero,
+.comma,
+.equals,
+.plus {
+  border: 3px solid black;
+  height: 1.5rem;
+  width: 1rem;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
