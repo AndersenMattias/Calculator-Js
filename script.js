@@ -1,9 +1,10 @@
-let output = document.getElementById('output');
+let result = document.getElementById('result');
 let number = document.querySelectorAll('.number');
 let operators = document.querySelectorAll('.operator');
+let operatorDark = document.querySelectorAll('.operatorOne');
 let valueOne;
 let valueTwo;
-let result;
+let sum;
 let currentOperator = '';
 
 document
@@ -13,38 +14,38 @@ document
 function handleClick(e) {
   e.preventDefault();
 
-  if (e.target.className.indexOf('reset') >= 0) {
+  if (e.target.className.indexOf('result') >= 0) {
     valueOne = undefined;
     valueTwo = undefined;
-    result = undefined;
+    sum = undefined;
     currentOperator = '';
-    output.innerText = '';
+    result.innerText = '';
   }
 
   if (e.target.className.indexOf('number') >= 0) {
-    output.innerText = output.innerText + e.target.innerText;
+    result.innerText = result.innerText + e.target.innerText;
   }
 
   if (e.target.className.indexOf('operator') >= 0) {
     if (currentOperator.length > 0 && valueTwo === undefined && valueOne) {
-      valueTwo = +output.innerText;
+      valueTwo = +result.innerText;
       if (currentOperator === 'addition') {
-        output.innerText = addition();
+        result.innerText = addition();
       }
       if (currentOperator === 'subtraction') {
-        output.innerText = subtraction();
+        result.innerText = subtraction();
       }
       if (currentOperator === 'multiply') {
-        output.innerText = multiply();
+        result.innerText = multiply();
       }
       if (currentOperator === 'division') {
-        output.innerText = division();
+        result.innerText = division();
       }
     }
-    if (valueOne === undefined && output.innerText.length > 0) {
-      valueOne = +output.innerText;
+    if (valueOne === undefined && result.innerText.length > 0) {
+      valueOne = +result.innerText;
       currentOperator = e.target.value;
-      output.innerText = '';
+      result.innerText = '';
     }
   }
 }
@@ -68,13 +69,13 @@ function division() {
 const displayNumbers = numbers.forEach((number) => {
   number.addEventListener('click', (e) => {
     let x = e.currentTarget.value;
-    outputNumb.innerHTML = x;
+    resultNumb.innerHTML = x;
   });
 });
 
 const displayOperators = operators.forEach((operator) => {
   operator.addEventListener('click', (e) => {
     let y = e.target.value;
-    outputNumb.innerHTML = y;
+    resultNumb.innerHTML = y;
   });
 }); */
