@@ -22,24 +22,51 @@ h1 {
   font-size: 100px;
 }
 
+#output {
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  border: 3px solid black;
+  font-size: 50px;
+  width: 350px;
+  height: 80px;
+}
+
 .reset-container {
   transform: translate(40px);
 }
 
-.btn {
-  background-color: Transparent;
-  background-repeat: no-repeat;
+.reset {
+  color: transparent;
+  background-color: transparent;
+  text-shadow: 0 0 0 #000000;
   border: none;
   cursor: pointer;
-  overflow: hidden;
+  font-size: 40px;
+  width: 60px;
+}
+
+.number,
+.operator {
+  color: transparent;
+  background-color: transparent;
+  text-shadow: 0 0 0 #000000;
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
+  width: 20px;
+}
+
+.number:focus,
+.operator {
   outline: none;
-  font-size: 30px;
 }
 
 .main-container {
   border: 5px solid black;
   width: 600px;
-  height: 600px;
+  height: 700px;
 }
 
 .display {
