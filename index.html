@@ -10,37 +10,74 @@
     <h1>Calculator</h1>
     <div class="outer-container">
       <div class="main-container">
-        <div class="display"><input id="output" type="number" /></div>
+        <div class="display">
+          <span id="output">0</span>
+        </div>
 
         <br /><br />
 
         <div class="box reset-container">
-          <button class="btn">AC</button>
+          <input class="reset" type="text" value="AC" />
         </div>
 
         <div class="numbers-container1">
-          <div class="box"><button type="button" class="btn">7</button></div>
-          <div class="box"><button type="button" class="btn">8</button></div>
-          <div class="box"><button type="button" class="btn">9</button></div>
-          <div class="box"><button type="button" class="btn">/</button></div>
+          <div class="box">
+            <input class="number" type="text" value="7" />
+          </div>
+          <div class="box">
+            <input class="number" type="text" value="8" />
+          </div>
+          <div class="box">
+            <input class="number" type="text" value="9" />
+          </div>
+          <div class="box">
+            <input class="operator" type="text" value="/" />
+          </div>
         </div>
+
         <div class="numbers-container2">
-          <div class="box"><button type="button" class="btn">4</button></div>
-          <div class="box"><button type="button" class="btn">5</button></div>
-          <div class="box"><button type="button" class="btn">6</button></div>
-          <div class="box"><button type="button" class="btn">*</button></div>
+          <div class="box">
+            <input class="number" type="text" value="4" />
+          </div>
+          <div class="box">
+            <input class="number" type="text" value="5" />
+          </div>
+          <div class="box">
+            <input class="number" type="text" value="6" />
+          </div>
+          <div class="box">
+            <input class="operator" type="text" value="*" />
+          </div>
         </div>
+
         <div class="numbers-container3">
-          <div class="box"><button type="button" class="btn">1</button></div>
-          <div class="box"><button type="button" class="btn">2</button></div>
-          <div class="box"><button type="button" class="btn">3</button></div>
-          <div class="box"><button type="button" class="btn">-</button></div>
+          <div class="box">
+            <input class="number" type="text" value="1" />
+          </div>
+          <div class="box">
+            <input class="number" type="text" value="2" />
+          </div>
+          <div class="box">
+            <input class="number" type="text" value="3" />
+          </div>
+          <div class="box">
+            <input class="operator" type="text" value="-" />
+          </div>
         </div>
+
         <div class="numbers-container4">
-          <div class="box"><button type="button" class="btn">0</button></div>
-          <div class="box"><button type="button" class="btn">,</button></div>
-          <div class="box"><button type="button" class="btn">=</button></div>
-          <div class="box"><button type="button" class="btn">+</button></div>
+          <div class="box">
+            <input class="number" type="text" value="0" />
+          </div>
+          <div class="box">
+            <input class="operator" type="text" value="," />
+          </div>
+          <div class="box">
+            <input class="operator" type="text" value="=" />
+          </div>
+          <div class="box">
+            <input class="operator" type="text" value="+" />
+          </div>
         </div>
       </div>
     </div>
