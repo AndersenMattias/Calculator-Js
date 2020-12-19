@@ -12,8 +12,18 @@ h1 {
   text-align: center;
 }
 
-.reset {
+.reset-container {
   transform: translate(48px);
+}
+
+.btn {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-size: 30px;
 }
 
 .main-container {
@@ -31,8 +41,7 @@ input[type='number'] {
   height: 50px;
 }
 
-.btn {
-  font-size: 30px;
+.box {
   border: 3px solid black;
   height: 40px;
   width: 80px;
