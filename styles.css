@@ -1,3 +1,12 @@
+body {
+  box-sizing: border-box;
+  background-color: rgb(181, 170, 157);
+}
+
+.main-container {
+  background-color: rgb(133, 120, 120);
+}
+
 .display,
 .outer-container,
 .numbers-container1,
@@ -10,10 +19,11 @@
 
 h1 {
   text-align: center;
+  font-size: 100px;
 }
 
 .reset-container {
-  transform: translate(48px);
+  transform: translate(40px);
 }
 
 .btn {
@@ -27,7 +37,7 @@ h1 {
 }
 
 .main-container {
-  border: 3px solid black;
+  border: 5px solid black;
   width: 600px;
   height: 600px;
 }
@@ -37,12 +47,13 @@ h1 {
 }
 
 input[type='number'] {
+  font-size: 30px;
   width: 250px;
   height: 50px;
 }
 
 .box {
-  border: 3px solid black;
+  border: 5px solid black;
   height: 40px;
   width: 80px;
   padding: 10px;
