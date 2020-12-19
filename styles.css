@@ -3,59 +3,65 @@ body {
   background-color: rgb(181, 170, 157);
 }
 
-.main-container {
-  background-color: rgb(62, 58, 58);
-}
-
-.display,
-.outer-container,
-.numbers-container1,
-.numbers-container2,
-.numbers-container3,
-.numbers-container4 {
-  display: flex;
-  justify-content: center;
-}
-
 h1 {
   text-align: center;
   font-size: 100px;
 }
 
-#output {
+.outer-container,
+.display {
   display: flex;
-  justify-content: flex-end;
-  background-color: rgb(196, 193, 193);
+  justify-content: center;
+}
+
+/* Background colours --> */
+.number {
+  background-color: rgb(111, 111, 111);
+}
+
+.operatorOne {
+  background-color: rgb(80, 80, 80);
+}
+
+.operator {
+  background-color: rgba(255, 149, 0, 0.845);
+}
+
+/* Background colours <-- */
+
+.main-container {
+  background-color: rgb(62, 58, 58);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 600px;
+  width: 500px;
+}
+
+.zero {
+  grid-area: 5 / 1 / 6 / 3;
+}
+
+#result {
+  background-color: rgb(28, 28, 28);
+  color: rgb(220, 220, 220);
   padding: 10px 10px 10px 10px;
   border: 3px solid black;
+  border-radius: 10px;
   font-size: 50px;
-  width: 350px;
+  width: 475px;
   height: 80px;
 }
 
-.reset-container {
-  transform: translate(60px);
-}
-
-.reset {
-  border: none;
-  cursor: pointer;
-  font-size: 50px;
-  background-color: rgb(95, 131, 122);
-}
-
 .number,
-.operator {
+.operator,
+.operatorOne {
+  color: rgb(220, 220, 220);
   font-size: 50px;
-
-  width: 100%;
-  background-color: rgb(95, 131, 122);
-
-  border: none;
   cursor: pointer;
   outline: none;
 }
-
+/*
 .main-container {
   border: 5px solid black;
   width: 600px;
@@ -73,4 +79,4 @@ h1 {
   margin: 10px;
   text-align: center;
   cursor: pointer;
-}
+}*/
